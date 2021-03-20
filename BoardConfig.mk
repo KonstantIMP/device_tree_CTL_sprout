@@ -170,12 +170,6 @@ BOARD_USES_QC_TIME_SERVICES := true
 # SELinux
 PRIVATE_EXCLUDE_BUILD_TEST := true
 
-# Sepolicy (replace it)
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 # Vendor Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-01-01
 
